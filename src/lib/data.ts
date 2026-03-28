@@ -89,7 +89,6 @@ export const projects: Project[] = [
     year: '2026',
     image: '/work/03-project/Thumbnail.png',
     video: '/work/03-project/WINNER PRODUKTINNOVATION.mp4',
-    video: '/work/03-project/WINNER PRODUKTINNOVATION.mp4',
     videos: [
       { label: 'Winner Produktinnovation', src: '/work/03-project/WINNER PRODUKTINNOVATION.mp4' },
       { label: 'Winner Publikumsliebling', src: '/work/03-project/WINNER Publikumsliebling.mp4' },

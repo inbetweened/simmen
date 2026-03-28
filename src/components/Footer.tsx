@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { siteConfig, socialLinks, navItems } from '@/lib/data'
-import { motion } from 'framer-motion'
+
 import { useLang } from '@/context/LanguageContext'
 import { t } from '@/lib/translations'
 
@@ -82,7 +82,7 @@ export default function Footer() {
               ))}
               </div>
               <span className="font-accent text-4xl text-accent-pink select-none" style={{ transform: 'rotate(0.9deg)', display: 'inline-block', opacity: 0.93 }} aria-hidden="true">
-                let's talk.
+                let&apos;s talk.
               </span>
             </nav>
           </div>
