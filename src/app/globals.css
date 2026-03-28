@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Local Fonts ──────────────────────────────────────────────────────────────
+   To swap the accent font: update the src path below and the font-family name.
+   The Tailwind `font-accent` class will pick up the change automatically.
+   ─────────────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Skribblugh';
+  src: url('/fonts/SkribblughRegular-XGW02.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── Design Tokens ────────────────────────────────────────────────────────────
+   All brand colours live here. Update once, applies everywhere.
+   ─────────────────────────────────────────────────────────────────────────── */
+:root {
+  --color-bg: #0a0a0a;
+  --color-fg: #f0ede8;
+  --color-muted: #6b6560;
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  /* ── Accent palette ── */
+  --color-pink:     #f03355;   /* vivid warm pink — primary accent  */
+  --color-blue:     #8bbde8;   /* soft sky blue   — secondary accent */
+  --color-taupe:    #c0afa5;   /* warm taupe      — neutral mid-tone */
+  --color-lavender: #a498c8;   /* muted lavender  — tertiary accent  */
+}
+
+/* ─── Base Reset ────────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-ui), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* ─── Selection ─────────────────────────────────────────────────────────────── */
+::selection {
+  background-color: #f03355;
+  color: #f0ede8;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted);
+  border-radius: 2px;
+}
+
+/* ─── Focus Visible ─────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 1px solid rgba(240, 237, 232, 0.4);
+  outline-offset: 3px;
+}
+
+/* ─── Utility ───────────────────────────────────────────────────────────────── */
+img,
+video {
+  display: block;
+  max-width: 100%;
+}

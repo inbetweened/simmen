@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #0a0a0a;
+        font-family: Skribblugh-Regular, Skribblugh;
+        font-size: 36px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(.26 24.16)"><tspan class="cls-3" x="0" y="0">D</tspan><tspan class="cls-1" x="14.94" y="0">S</tspan></text>
+</svg>
