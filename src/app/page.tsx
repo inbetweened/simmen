@@ -43,25 +43,6 @@ function Reveal({
   )
 }
 
-// ─── Torn edge ────────────────────────────────────────────────────────────────
-function TornEdge() {
-  return (
-    <div className="relative w-full overflow-hidden leading-[0]" aria-hidden="true">
-      <svg
-        viewBox="0 0 1440 72"
-        preserveAspectRatio="none"
-        className="w-full block"
-        style={{ height: '72px' }}
-      >
-        <path
-          d="M0,72 L0,42 Q30,18 65,36 Q100,52 148,14 Q190,0 240,32 Q285,52 340,18 Q390,0 450,38 Q500,58 565,12 Q620,0 685,40 Q730,62 800,16 Q858,0 920,34 Q970,54 1040,12 Q1100,0 1160,36 Q1210,56 1275,14 Q1330,0 1390,30 L1440,38 L1440,72 Z"
-          fill="#0a0a0a"
-        />
-      </svg>
-    </div>
-  )
-}
-
 // ─── Section wrapper ──────────────────────────────────────────────────────────
 function Section({
   id,
@@ -235,31 +216,6 @@ export default function Home() {
   return (
     <main>
       <SiteNav />
-
-      {/* ── White editorial header ──────────────────────────────────────────── */}
-      <header
-        className="pt-[76px] bg-[#f0ede8] relative overflow-hidden"
-        style={{
-          backgroundImage:
-            'repeating-linear-gradient(to bottom, transparent, transparent 47px, rgba(0,0,0,0.18) 47px, rgba(0,0,0,0.18) 49px)',
-        }}
-      >
-        {/* Large accent watermark */}
-        <span
-          className="absolute bottom-4 right-6 md:right-12 font-accent text-[88px] md:text-[128px] lg:text-[160px] text-black/[0.07] leading-none select-none pointer-events-none"
-          style={{ transform: 'rotate(1.1deg)', opacity: 0.9 }}
-          aria-hidden="true"
-        >
-          daniel simmen.
-        </span>
-
-        <div className="py-20 md:py-28" />
-      </header>
-
-      {/* ── Torn edge ──────────────────────────────────────────────────────────── */}
-      <div className="bg-[#f0ede8]">
-        <TornEdge />
-      </div>
 
       {/* ── Dark sections ──────────────────────────────────────────────────────── */}
       <div className="bg-[#0a0a0a]">
